@@ -184,12 +184,6 @@ body {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
-@media (max-width: 500px) {
-  .middleSec {
-    flex-direction: column;
-    height: 1000px;
-  }
-}
 .middleSec img {
   width: 48%;
   height: 80%;
@@ -252,4 +246,26 @@ body {
 }
 footer {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .middleSec {
+    flex-direction: column;
+    height: 800px;
+  }
+  .middleSec img {
+    height: 50%;
+    width: 70%;
+  }
+  .introduction {
+    height: 300px;
+  }
+  .work {
+    height: 1000px;
+  }
+  .work .workItemA {
+    height: 200px;
+  }
+  .work .workItemB {
+    height: 200px;
+  }
 }
