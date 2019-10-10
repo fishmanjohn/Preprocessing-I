@@ -153,26 +153,22 @@ body {
   align-items: flex-end;
   flex-wrap: wrap;
   height: 200px;
-  border: 1px dashed red;
 }
 .resHead h1 {
   font-size: 6.2rem;
   align-self: center;
   justify-self: space-around;
   text-align: center;
-  border: 1px dashed red;
   width: 100%;
 }
 .resHead .contact {
   font-size: 1.8rem;
   width: 50%;
-  border: 1px dashed red;
 }
 .resHead nav {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
-  border: 1px dashed red;
 }
 .resHead nav a {
   font-size: 1.8rem;
@@ -190,7 +186,7 @@ body {
 }
 @media (max-width: 500px) {
   .middleSec {
-    flex-didrection: column;
+    flex-direction: column;
     height: 1000px;
   }
 }
