@@ -52,8 +52,168 @@ table {
 * {
     box-sizing: border-box;
 }
+//variables
+@flexMark: 1px dashed red;
+@item-back:lightgrey;
+ @justify: space-evenly;
+ @align: center;
+@main-font: 'Mukta', sans-serif;
+//mixins
+.flexcol{
+	display: flex;
+	flex-direction: column;
+    justify-content: space-evenly;
+}
+.flexin{
+	display:flex;
+	justify-content:space-evenly;
+}
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color:rgb(168, 172, 179);
+	font-size:62.5%;
+	font-family: @main-font;
+}
+
+.resHead{
+	display:flex;
+	background-color:@item-back;
+	justify-content:space-evenly;
+	align-items:flex-end;
+	flex-wrap: wrap;
+	height:200px;
+//border:@flexMark;
+h1{
+font-size:6.2rem;
+align-self: center;
+justify-self:space-around;
+text-align: center;
+//border:@flexMark;
+width: 100%;
+}
+.contact{
+	font-size:1.8rem;
+	width: 50%;
+	//border:@flexMark;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	width:50%;
+	//border:@flexMark;
+	a{
+		font-size:1.8rem;
+		color:black;
+		text-decoration: none;
+	}
+	
+}
+
+}
+.middleSec{
+	display: flex;
+	width: 100%;
+	height: 500px;
+	justify-content: space-evenly;
+	align-items: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+
+	
+
+	img{
+		width: 48%;
+		height:80%;
+	}
+
+	.skillsList{
+		display:flex; 
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+		font-size: 2.0rem;
+		width:48%;
+		height:80%;
+		//border:@flexMark;
+
+		h2{
+			font-size:3.0rem;
+			font-weight:bold; 
+		}
+
+		ul{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			list-style-type: disc;
+		}
+	}
+}
+.introduction{
+	.flexcol;
+ align-content: flex-start;
+ height: 150px;
+ width:80%;
+padding-left:20%;
+	h2{
+	font-size:3.0rem;
+	font-weight:bold; 
+	}
+	p{
+	font-size:1.8rem;
+	}
+}
+
+.work{
+ .flexcol;
+height: 700px;
+width: 100%;
+align-items: center;
+
+	.workItemA{
+		height:100px;
+		width:80%;
+		border: 1px solid black;
+		background-color: @item-back;
+		font-size: 1.8rem;
+
+	}
+	.workItemB{
+		height:100px;
+		width:80%;
+		border: 1px solid black;
+		font-size: 1.8rem;
+	}
+}
+footer{
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	.middleSec{
+	flex-direction:column;
+	height: 800px;
+
+	img{
+		height:50%;
+		width: 70%;
+	}
+}
+	.introduction{
+		height:300px;
+	}
+	.work{
+		height: 1000px;
+
+		.workItemA{
+			height:200px;
+		}
+		.workItemB{
+			height:200px;
+		}
+	}
+
 }
 

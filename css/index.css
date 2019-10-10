@@ -1,1 +1,271 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.flexin {
+  display: flex;
+  justify-content: space-evenly;
+}
+html,
+body {
+  height: 100%;
+  background-color: #a8acb3;
+  font-size: 62.5%;
+  font-family: 'Mukta', sans-serif;
+}
+.resHead {
+  display: flex;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 200px;
+}
+.resHead h1 {
+  font-size: 6.2rem;
+  align-self: center;
+  justify-self: space-around;
+  text-align: center;
+  width: 100%;
+}
+.resHead .contact {
+  font-size: 1.8rem;
+  width: 50%;
+}
+.resHead nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.resHead nav a {
+  font-size: 1.8rem;
+  color: black;
+  text-decoration: none;
+}
+.middleSec {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.middleSec img {
+  width: 48%;
+  height: 80%;
+}
+.middleSec .skillsList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  width: 48%;
+  height: 80%;
+}
+.middleSec .skillsList h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.middleSec .skillsList ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: disc;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  height: 150px;
+  width: 80%;
+  padding-left: 20%;
+}
+.introduction h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.introduction p {
+  font-size: 1.8rem;
+}
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+}
+.work .workItemA {
+  height: 100px;
+  width: 80%;
+  border: 1px solid black;
+  background-color: lightgrey;
+  font-size: 1.8rem;
+}
+.work .workItemB {
+  height: 100px;
+  width: 80%;
+  border: 1px solid black;
+  font-size: 1.8rem;
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .middleSec {
+    flex-direction: column;
+    height: 800px;
+  }
+  .middleSec img {
+    height: 50%;
+    width: 70%;
+  }
+  .introduction {
+    height: 300px;
+  }
+  .work {
+    height: 1000px;
+  }
+  .work .workItemA {
+    height: 200px;
+  }
+  .work .workItemB {
+    height: 200px;
+  }
+}
